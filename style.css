@@ -1,0 +1,77 @@
+.result {
+    background-color: rgb(189, 241, 241);
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 152, 152);
+    box-shadow: inset 0px 0px 2px 0px grey;
+
+}
+
+div {
+    text-indent: 10px;
+}
+
+input {
+    height: 20px;
+    width: 200px;
+    margin: 8px 0;
+}
+
+.b2 {
+    background-color: rgb(245, 153, 153);
+}
+
+.b3 {
+    background-color: rgb(186, 243, 186);
+}
+
+
+
+
+span {
+    line-height: 40px;
+
+}
+
+.b1 span {
+    color: rgb(3, 100, 100);
+}
+
+.b2 span {
+    color: rgb(70, 0, 0);
+}
+
+.b3 span {
+    color: rgb(1, 66, 6);
+}
+
+button {
+    margin-top: 20px;
+    width: auto;
+    height: 35px;
+    background-color: rgb(240, 243, 39);
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 2px 0px rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
+
+}
+
+#add {
+    width: 500px;
+    height: auto;
+    border: 15px solid rgb(39, 39, 58);
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

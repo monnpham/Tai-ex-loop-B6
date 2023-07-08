@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <section>
+        <h1>Bài 1</h1>
+        <div class="result b1">
+            <span id="small-int"></span>
+        </div>
+    </section>
+    <section>
+        <h1>Bài 2</h1>
+        <input id="x" type="number" placeholder="Nhập Số x"><br>
+        <input id="n" type="number" placeholder="Nhập Số n"><br>
+        <div class="result b2">
+            <span id="sum"></span>
+        </div>
+        <button onclick="sum()" class="b2">Tính Tổng</button>
+    </section>
+    <section>
+        <h1>Bài 3</h1>
+        <input id="factor-int" type="number" placeholder="Nhập Số n"><br>
+        <div class="result b3">
+            <span id="factorial"></span>
+        </div>
+        <button onclick="factorial()" class="b3">Tính Giai Thừa</button>
+    </section>
+    <section>
+        <h1>Bài 4</h1>
+        <div id="add"></div>
+        <button onclick="add_div()" class="b4">Tạo Div</button>
+    </section>
 
+
+
+    <script src="js.js"></script>
 </body>
 
 </html>
