@@ -27,11 +27,8 @@ input {
 }
 
 
-
-
 span {
     line-height: 40px;
-
 }
 
 .b1 span {
@@ -66,7 +63,7 @@ button:hover {
 }
 
 #add {
-    width: 500px;
+    width: 350px;
     height: auto;
     border: 15px solid rgb(39, 39, 58);
 }

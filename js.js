@@ -1,3 +1,4 @@
+//bai 1
 var
     s = 0,
     n = 0;
@@ -6,7 +7,7 @@ while (s < 10000) {
     s += n;
 }
 document.getElementById("small-int").innerHTML = "Số nguyên dương nhỏ nhất: " + n
-
+//bai 2
 function sum() {
     var
         x = Number(document.getElementById("x").value),
@@ -20,7 +21,7 @@ function sum() {
     }
     document.getElementById("sum").innerHTML = s
 }
-
+//bai 3
 function factorial() {
     var
         n = Number(document.getElementById("factor-int").value),
@@ -28,6 +29,7 @@ function factorial() {
     document.getElementById("factorial").innerHTML = f
 
 }
+// tim` giai thừa
 function find_factorial(f) {
     if (f == 0)
         return (1);
@@ -37,30 +39,37 @@ function find_factorial(f) {
 
 
 function add_div() {
-    //tạo phần tử p    
     var
+        nn = $("#add > p").length,
         n = 0;
-    //tạo phần tử text
+    console.log("🚀 ~ file: js.js:44 ~ add_div ~ nn:", nn)
+
     while (n < 10) {
         n++
+        nn++
         var
+            //tạo phần tử text
             p = document.createElement("p");
         if (n % 2 == 0) {
-            var node = document.createTextNode("div chẵn " + n);
+            var node = document.createTextNode("div chẵn " + nn);
             p.appendChild(node);
             p.style.backgroundColor = 'red';
             p.style.color = "white";
-            p.style.height = "30px";
             p.style.lineHeight = "30px";
+
         } else {
-            var node = document.createTextNode("div lẻ " + n);
+            var node = document.createTextNode("div lẻ " + nn);
             p.appendChild(node);
-            p.style.backgroundColor = 'blue';
+            p.style.backgroundColor = 'rgb(52, 90, 212)';
             p.style.color = "white";
             p.style.lineHeight = "30px";
+
         }
         var div = document.getElementById("add");
         //gắn p vào div
         div.appendChild(p)
+
     }
+
+
 }
