@@ -42,8 +42,6 @@ function add_div() {
     var
         nn = $("#add > p").length,
         n = 0;
-    console.log("🚀 ~ file: js.js:44 ~ add_div ~ nn:", nn)
-
     while (n < 10) {
         n++
         nn++
