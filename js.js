@@ -40,28 +40,30 @@ function find_factorial(f) {
 
 function add_div() {
     var
-        nn = $("#add > p").length,
-        n = 0;
+        // nn = $("#add > p").length,
+        nn = document.getElementById("add");
+    a = nn.getElementsByTagName("p").length;
+    n = 0;
     while (n < 10) {
         n++
-        nn++
+        a++
+        // nn++
         var
             //tạo phần tử text
             p = document.createElement("p");
         if (n % 2 == 0) {
-            var node = document.createTextNode("div chẵn " + nn);
+            var node = document.createTextNode("div chẵn " + a /* nn */);
             p.appendChild(node);
             p.style.backgroundColor = 'red';
             p.style.color = "white";
             p.style.lineHeight = "30px";
 
         } else {
-            var node = document.createTextNode("div lẻ " + nn);
+            var node = document.createTextNode("div lẻ " + a);
             p.appendChild(node);
             p.style.backgroundColor = 'rgb(52, 90, 212)';
             p.style.color = "white";
             p.style.lineHeight = "30px";
-
         }
         var div = document.getElementById("add");
         //gắn p vào div
